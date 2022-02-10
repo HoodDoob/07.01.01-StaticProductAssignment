@@ -1,0 +1,201 @@
+@import url("https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@300;500;600&display=swap");
+
+body {
+  height: 100%;
+  width: 100%;
+  background: rgb(255, 255, 255);
+  background-repeat: no-repeat;
+  background-size: auto;
+  margin: 0%;
+}
+#logo {
+  font-family: "Zilla Slab", serif;
+  font-weight: 500;
+  font-size: 5vw;
+  margin-left: 10%;
+  margin-right: 10%;
+  grid-template-columns: 1fr 1fr;
+  display: grid;
+  margin-top: 4.9%;
+}
+#nav_bar > div:hover {
+  font-size: 5vw;
+}
+.current_subpage {
+  font-size: 5vw;
+}
+#nav_bar {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1fr 1fr 1fr;
+  font-family: "Zilla Slab", serif;
+  font-weight: 300;
+  font-size: 3vw;
+  margin-left: 10%;
+}
+.breadcrumbs {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1fr 1fr 1fr;
+  font-family: "Zilla Slab", serif;
+  font-weight: 300;
+  font-size: 3vw;
+  margin-left: 10%;
+}
+.breadcrumbs2 {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1fr 1fr 1fr;
+  font-family: "Zilla Slab", serif;
+  font-weight: 300;
+  font-size: 3vw;
+  margin-left: 10%;
+}
+#nav_bar > div {
+  padding: 1%;
+  border: 1px solid;
+}
+.breadcrumbs > div {
+  padding: 1%;
+  border: 1px solid;
+}
+
+#categories_menu {
+  grid-template-columns: 1fr 1fr;
+  display: grid;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 10%;
+  align-items: center;
+  gap: 10%;
+  font-family: "Zilla Slab", serif;
+  font-weight: 500;
+  font-size: 3vw;
+}
+/* #product_list_menu {
+  grid-template-columns: 1fr;
+  display: grid;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 10%;
+  align-items: center;
+  font-size: 3vw;
+  gap: 5%;
+} */
+/* .item_productlist > img {
+  height: 100%;
+  width: 80%;
+  position: relative;
+} */
+.item_productlist {
+  border: 1px solid;
+  padding: 5%;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 10%;
+  align-items: center;
+  font-size: 3vw;
+  gap: 5%;
+}
+.img_productlist {
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  margin-left: 10%;
+  margin-right: 10%;
+  height: 100%;
+  width: 80%;
+}
+/*          added categories             */
+
+.item_productlist .on_sale .price span {
+  display: initial;
+}
+.sold_out::before {
+  content: "Sold Out";
+  position: absolute;
+  background: var(--color);
+  color: var(--background-color);
+  z-index: 2;
+}
+.item_productlist .img_productlist img {
+  opacity: 0.5;
+}
+
+.discounted p:last-child {
+  background: var(--off-color);
+  align-items: flex-end;
+}
+.item_productlist .discounted,
+.item_productlist .price span {
+  display: none;
+}
+.item_productlist div.on_sale,
+.item_productlist div.on_sale .price span {
+  display: flex;
+  justify-content: space-between;
+}
+/* .productlist article.soldOut::before {
+  content: "Sold Out";
+  position: absolute;
+  background: var(--color);
+  color: var(--background-color);
+  padding: 1rem;
+} */
+
+/*           menu             */
+#top_bar {
+  font-family: "Zilla Slab", serif;
+  font-weight: 300;
+  font-size: 2.4vw;
+  /* margin-left: 10%;
+  margin-right: 10%; */
+  grid-template-columns: 1fr 1fr;
+  display: grid;
+  margin-top: 5%;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+.item_productlist > a,
+p {
+  font-family: "Zilla Slab", serif;
+  font-weight: 300;
+}
+h2 {
+  font-family: "Zilla Slab", serif;
+  font-weight: 600;
+  font-size: 5vw;
+}
+h3 {
+  font-family: "Zilla Slab", serif;
+  font-weight: 500;
+}
+a:link {
+  color: #000000;
+  text-decoration: none;
+  margin: 0px;
+  z-index: 5;
+}
+a:visited {
+  z-index: 5;
+  color: #000000;
+}
+a:hover {
+  z-index: 5;
+  color: #000000;
+  text-decoration: underline;
+}
+a:active {
+  z-index: 5;
+  font-weight: bold;
+}
+hr {
+  border: 1px solid black;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+.price {
+  position: relative;
+  align-items: center;
+  justify-content: center;
+}
