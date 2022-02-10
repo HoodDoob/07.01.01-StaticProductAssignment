@@ -106,6 +106,15 @@ body {
   height: 100%;
   width: 80%;
 }
+.img_singleproduct {
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  margin-left: 10%;
+  margin-right: 10%;
+  height: 100%;
+  width: 80%;
+}
 /*          added categories             */
 
 .item_productlist .on_sale .price span {
@@ -114,8 +123,6 @@ body {
 .sold_out::before {
   content: "Sold Out";
   position: absolute;
-  background: var(--color);
-  color: var(--background-color);
   z-index: 2;
 }
 .item_productlist .img_productlist img {
