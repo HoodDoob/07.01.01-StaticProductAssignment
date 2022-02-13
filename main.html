@@ -8,35 +8,29 @@
   </head>
   <body>
     <header>
-      <a class="logo" href="main.html">HubShop</a>
+      <p class="logo_main">
+        <a class="logo_main" href="main.html">HubShop</a>
+      </p>
+      <div class="nav_bar_main">
+        <div><a href="category.html">Categories</a></div>
 
-      <div class="nav_bar">
-        <div class="current_subpage">
-          <div><a href="category.html">Categories</a></div>
-        </div>
         <div><a href="category.html">Brands</a></div>
         <div><a href="category.html">Seasons</a></div>
       </div>
     </header>
     <main>
-      <div id="CL" class="categoryList">
-        <template id="categoryListTemplate">
-          <section class="Accessories">
-            <a href="productlist.html">
-              <h2>Accessories</h2>
-            </a>
-          </section>
-        </template>
+      <div class="categories_menu">
+        <div id="categories_menu"></div>
       </div>
     </main>
-    <!-- <footer>
+    <footer>
       All the data comes from
       <a
         href="https://www.kaggle.com/paramaggarwal/fashion-product-images-dataset"
       >
         https://www.kaggle.com/paramaggarwal/fashion-product-images-dataset</a
       >
-    </footer> -->
+    </footer>
     <script src="category.js"></script>
   </body>
 </html>
